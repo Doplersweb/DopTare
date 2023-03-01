@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600&family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body{
+background-color:#ff4e65;
+}
+
+.beauty-pic{
+    background-image: url("bg.png");
+    background-size: cover;
+    width: 350px;
+    height: 450px;
+    border-radius: 30px;
+    margin-left:330px;
+    top: 100px;
+    opacity: 1;
+    position: absolute;
+}
+.subject{
+    position: absolute;
+    top: 25px;
+    background-color: rgba(8, 8, 8, 0.7) !important;
+    word-wrap: break-word;
+    color: white;
+    height: 400px;
+    width: 250px;
+    left: 50px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.subject > p{
+    font-size: 12px;
+    padding-top: 10px ;
+    
+}
+.create-head{
+    top: 20px;
+    font-size: 20px;
+    position: absolute;
+}
+#arrow{
+    font-weight: 100;
+}
+label{
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.check-input{
+    accent-color: #8f0213;
+}
+.submit{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: #8f0213;
+}
+.mail-input{
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0.8px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.pass-input{
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0.8px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+.form-section{
+    width: 400px;
+    background-color: #ffffff;
+    height: 450px;
+    position: absolute;
+    top: 100px;
+    border-bottom-right-radius:30px;
+    border-top-right-radius: 30px;
+    left: 650px;
+    padding: 100px;
+}
+
+.jumbotron{
+    background-color: rgba(204, 204, 204, 0.7) !important;
+    padding: 10px;
+    width: 90px;
+    font-size: 14px !important;
+    border-radius: 10px;
+}
+.subject > h3{
+    font-weight: 300;
+    position: relative;
+    top: 15px;
+    font-size: 18px;
+
+}
+.btm{
+    bottom:5px;
+    position: absolute;
+    
+}
+.btm-link{
+ position: absolute;
+ bottom: 32px;
+ color: white;
+ font-size: 12px;
+ text-decoration: none;
+}
+@media (max-width:560px){
+    .beauty-pic{
+        margin-left: 0;
+        top: 1.5%;
+        width: 80%;
+        margin-bottom: 100px;
+        left: 10%;
+    
+
+    }
+    .form-section{
+        left: 10%;
+        top: 70%;
+        width: 80%;
+        border-radius: 30px;
+        padding: 40px;
+overflow-y: auto;
+z-index: 999;
+bottom: 20%;
+
+       
+    }
+     
+.create{
+    margin-top: 50px;
+}
+.subject{
+    width: 70%;
+    left: 15%;
+}
+}

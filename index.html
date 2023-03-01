@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tare - </title>
+    <!--Design by BigTare codes by onyema-->
+</head>
+<script>
+    function allowme() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function form(){
+    var person= document.getElementById("myInput").value;
+    var personpass = document.getElementById("pass").value;
+    
+    if(person==="admin@gmail.com" && personpass==="admin"){
+        window.open("/home.html");
+    }
+    else{
+        Window.open("www.shuttttt.com");
+    }
+    return form;
+}
+</script>
+<body>
+    <div class="container">
+        <div class="beauty-pic">
+            <div class="subject">
+                <p class="jumbotron">We are live</p>
+                 <h3>Invite only right now.</h3>
+                 <p>10 Million+ people have joined our club.<br/> We invite you to join the club.</p>
+                 <a class="btm-link" href="##">Already have an account?</a>
+                 <p class="btm">Sign in</p>
+            </div>
+        </div>
+        <div class="form-section">
+            <form class="create" onsubmit="form()">
+                <h3 class="create-head">Sign up</h3>
+                <label for="email">Email address</label>
+                <input type="email" class="mail-input" name="email" placeholder="Enter your email"/><br/>
+                <label for="password">Set password</label>
+                <input type="password" name="password" id="myInput"class="pass-input" placeholder="Enter password"/><br/>
+                <input type="checkbox" name="check" id="pass" class="check-input" onclick="allowme()"/><label for="check">Show password</label><br/><br/><br/>
+                <button type="submit" name="submit" onclick="form()" class="submit">Sign up <i id="arrow" class="fa fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
